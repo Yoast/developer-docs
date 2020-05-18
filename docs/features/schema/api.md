@@ -12,6 +12,11 @@ import Alert from '../../../../developer-site/src/components/Alert';
 The release of [Yoast SEO 14.0](https://developer.yoast.com/upcoming-release-yoast-seo-14-0-indexables/) in April 2020 brings significant changes to how our Schema API and integration mechanics work. This document reflects our API *after* that release.
 </Alert>
 
+<Alert type="warning">
+
+When integrating with Yoast SEO, please ensure you do not use any of the Yoast SEO classes in your own code until _after_ `plugins_loaded` has executed. This applies to both autoloading and non-autoloading solutions, such as Composer or when using `require()`. 
+</Alert>
+
 ## Making Schema easier to debug
 If you're working on Schema, it can be rather hard to read. To change that, you should toggle the `yoast_seo_development_mode` filter to `true`. At that point all the Schema that Yoast SEO outputs will be pretty printed.
 

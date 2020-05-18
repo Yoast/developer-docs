@@ -5,6 +5,12 @@ sidebar_label: API
 custom_edit_url: https://github.com/Yoast/developer-docs/edit/master/docs/features/canonical-urls/api.md
 description: Instructions on how to modify our canonical URL values programmatically.
 ---
+import Alert from '../../../../../developer-site/src/components/Alert';
+
+<Alert type="warning">
+
+When integrating with Yoast SEO, please ensure you do not use any of the Yoast SEO classes in your own code until _after_ `plugins_loaded` has executed. This applies to both autoloading and non-autoloading solutions, such as Composer or when using `require()`. 
+</Alert>
 
 To change the canonical URL that Yoast SEO generated for a URL programmatically, you can use the `wpseo_canonical` filter.
 
