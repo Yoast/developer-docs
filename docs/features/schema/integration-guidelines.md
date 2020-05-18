@@ -5,6 +5,7 @@ sidebar_label: Integration guidelines
 custom_edit_url: https://github.com/Yoast/developer-docs/edit/master/docs/features/schema/integration-guidelines.md
 description: Integrating with Yoast's structured data framework is easy, and, we encourage all plugin/theme/software authors to consider adopting and extending our approach.
 ---
+import Alert from '../../../../developer-site/src/components/Alert';
 
 ## Introduction
 Integrating with Yoast's structured data framework is easy, and, we encourage all plugin/theme/software authors to consider adopting and extending our approach.
@@ -16,6 +17,11 @@ You should start by reading [our specification](functional-specification.md), an
 * This is output in a way which constructs a single, cohesive `@graph` object in `JSON-LD`. This can be read by search engines (and other software), and provides marketing/integration/discoverability benefits to the end user / site owner.
 * [Our Schema API](api.md) allows developers to alter or extend the output of the graph.
 * By adapting and extending our graph, we produce richer representations of web pages, which help consumers like Google, Facebook and others understand (and better expose) the content of those pages.
+
+<Alert type="warning">
+
+When integrating with Yoast SEO, please ensure you do not use any of the Yoast SEO classes in your own code until _after_ `plugins_loaded` has executed. This applies to both autoloading and non-autoloading solutions, such as Composer or when using `require()`. 
+</Alert>
 
 ## An example use-case
 Yoast SEO software already creates a large, structured graph, but there are content types which we don't (currently) support. You might want to add support for a specific content type. For example, you might want to add `Person` output to team profile pages, like we have here at Yoast. To do that, you should output a custom `Person` piece and stitch it into the main graph.
