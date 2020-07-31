@@ -48,6 +48,7 @@ By default, Yoast SEO ships with the following presenters that output meta tags
 * Article_Publisher_Presenter
 * Description_Presenter
 * FB_App_ID_Presenter
+* Image_Presenter
 * Locale_Presenter
 * Site_Name_Presenter
 * Title_Presenter
@@ -194,11 +195,19 @@ The following filters are available for you to hook in to:
 * `wpseo_opengraph_author_facebook` - Filter to manipulate the Article_Author_Presenter's output.
 * `wpseo_og_article_publisher` - Filter to manipulate the Article_Publisher_Presenter's output.
 * `wpseo_opengraph_desc` - Filter to manipulate the Description_Presenter's output.
+* `wpseo_opengraph_image` - Filter to manipulate the Image_Presenter's output.
 * `wpseo_og_locale` - Filter to manipulate the Locale_Presenter's output.
 * `wpseo_opengraph_site_name` - Filter to manipulate the Site_Name_Presenter's output.
 * `wpseo_opengraph_title` - Filter to manipulate the Title_Presenter's output.
 * `wpseo_opengraph_type` - Filter to manipulate the Type_Presenter's output.
 * `wpseo_opengraph_url` - Filter to manipulate the Url_Presenter's output.
+
+#### Legacy filters
+In addition to the filters that we ship in our presenters, we have some legacy filters that are still available.
+
+**Please note** These filters will be subject to change in the future. We will update this documentation accordingly to any future changes made.
+
+* `wpseo_opengraph_image_size` - Filter to manipulate the image size used for Open Graph sharing. If used, this defined size will always be enforced. The size is either a string value (i.e. `thumbnail`) or an array of width/height values (i.e. `[ 200, 100 ]`)
 
 ### Examples
 
