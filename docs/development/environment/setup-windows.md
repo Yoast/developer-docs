@@ -47,6 +47,7 @@ Please make sure to set the line endings to **Commit Unix-style line endings**, 
 Git needs access to user tools, you'll need to configure them in GitExtensions:  
 ![GitExtensions setup](./screenshots/win_gitextensions_setup_unix_tools.png) 
 
+
 ### PHP ###
 ##### Visual Studio Code ##### 
 [VScode](https://code.visualstudio.com/download) is a very nice cross platform IDE with support for all sorts of languages, including PHP and typescript / javscript that we use.
@@ -56,9 +57,10 @@ Git needs access to user tools, you'll need to configure them in GitExtensions:
 Please follow [Jeff Geerling's  excellent guide on installing and configuring PHP on windows](https://www.jeffgeerling.com/blog/2018/installing-php-7-and-composer-on-windows-10) that I wouldn't dare improve.
 Make sure you add your php folder to your path environment variable (Press Start > type 'edit environment variables' > click the **Path** line, click edit > New > Browse > navigate to the folder that contains *php.exe* and hit OK until the open dialogs go away.
 ##### Composer ##### 
-Download and install [Composer for windows](https://getcomposer.org/download/) which helps 
+Download and install [Composer for windows](https://getcomposer.org/download/) which performs some project wide tasks.
 ##### XDebug ##### 
 Carefully follow the steps on the [XDebug installation page](https://xdebug.org/docs/install) in the `Installing on Windows` section.
+
 
 ### Javascript ###
 ##### NodeJS ##### 
@@ -72,13 +74,17 @@ Carefully follow the steps on the [XDebug installation page](https://xdebug.org/
 ###### Docker ######
 [Docker](https://docs.docker.com/docker-for-windows/install/) download and install. Read carefully, follow the steps, you may need to tweak or install some additional items.
 [MySql Workbench](https://dev.mysql.com/downloads/workbench/) is an easy way to access the wordpress databases. Registration is not required, just click `Download` > `No thanks, just start my download` and install.
-
+[Git Bash] This should be installed by now, but you'll need this app all the time to run `composer` or `grunt` commands. You could save yourself some time by creating a shortcut to the app. 
+![Git Bash shortcut](./screenshots/win_git_bash_startmenu.png)
 
 ###### and finally... ######
 open a terminal or powershell window, run 
 - `choco install gsudo`. This will download and install a sudo command line option that enables shell scripts to ask for elevation on windows.
 - `choco install yarn`. Yarn ties our javascript code together.
-- `npm install grunt`. Grunt provides a platform to run various build tasks.
+- `npm install -g grunt-cli`. Grunt provides a platform to run various build tasks.
+- `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`. This allows scrips such as grunt to run.
+
+
 
 ## Set up PHPUnit
 
