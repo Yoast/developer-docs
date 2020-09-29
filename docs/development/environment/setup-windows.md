@@ -40,11 +40,11 @@ Git can install the MinTTY terminal window which is far more flexible than the W
 In the last step of the wizard, we recommend using the Git Credential Manager.
 
 We recommend using KDiff3 and NotePad++ as seen in this screenshot:
-![GitExtensions setup](/screenshots/win_gitextensions_setup_global_config.png)
+![GitExtensions setup](./screenshots/win_gitextensions_setup_global_config.png)
 Please make sure to set the line endings to **Commit Unix-style line endings**, as you'll be working with teammates whose environment is not compatible with Windows CRLF newlines.
 
 Git needs access to user tools, you'll need to configure them in GitExtensions:
-![GitExtensions setup](/screenshots/win_gitextensions_setup_unix_tools.png) 
+![GitExtensions setup](./screenshots/win_gitextensions_setup_unix_tools.png) 
 
 ### PHP ###
 ##### Visual Studio Code ##### 
