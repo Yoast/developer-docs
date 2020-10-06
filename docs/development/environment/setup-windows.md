@@ -84,9 +84,15 @@ open a terminal or powershell window, run
 - `npm install -g grunt-cli`. Grunt provides a platform to run various build tasks.
 - `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`. This allows scrips such as grunt to run.
 
+- composer install > fix the phps
+- yarn > fix the csss package.json
+- grunt > do the fixes
 
+## Set up PHPStorm
 
-## Set up PHPUnit
+### Enabling a bash terminal in PHPStorm
+In Preferences > Tools > Terminal, enter the path to Git Bash; using a linux shell helps with existing composer scripts.
+![Set Git Bash terminal in PHPStorm](./screenshots/win_phpstorm_terminal_gitbash.png)
 
 ### Enabling PHPUnit in PhpStorm
 The setup in PhpStorm can be completed by following the next steps:
