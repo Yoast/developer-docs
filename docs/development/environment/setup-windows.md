@@ -23,9 +23,9 @@ Generally speaking, we advise people to create a `Yoast` folder in their `Docume
 
 In your terminal, `cd` to the newly created `Yoast` directory. In there, you should locate the Docker directory and navigate to `<your docker directory>/plugins` where you can clone the various plugin repositories.
 
-### Platform
-[MySql Workbench](https://dev.mysql.com/downloads/workbench/) is an easy way to access the WordPress databases. Registration is not required, just click `Download` > `No thanks, just start my download` and install.
-[Git Bash] This should be installed by now, but you'll need this app all the time to run `composer` or `grunt` commands. You could save yourself some time by creating a shortcut to the app. 
+## Platform
+### [MySql Workbench](https://dev.mysql.com/downloads/workbench/) is an easy way to access the WordPress databases. Registration is not required, just click `Download` > `No thanks, just start my download` and install.
+### Git Bash comes with GitExtensions (see [the tools page](./tools-windows.md)) and should be installed. You'll need this app all the time to run `composer` or `grunt` commands with support for linux commands on a windows machine. You could save yourself some time by creating a shortcut to the app using the 'pin to Start' feature 
 ![Git Bash shortcut](../../static/img/win_git_bash_startmenu.png)
 
 ## Set up PHPUnit
