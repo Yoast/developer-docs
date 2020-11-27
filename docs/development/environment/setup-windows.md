@@ -23,72 +23,12 @@ Generally speaking, we advise people to create a `Yoast` folder in their `Docume
 
 In your terminal, `cd` to the newly created `Yoast` directory. In there, you should locate the Docker directory and navigate to `<your docker directory>/plugins` where you can clone the various plugin repositories.
 
-## Set up a few helper applications:
-Please download and install these applications:
-
-### Git ###
-##### KDiff3 ##### 
-[KDiff3](https://sourceforge.net/p/kdiff3/wiki/Home/) helps solving merge conflicts.
-##### NotePad++ ##### 
-[NotePad++](https://notepad-plus-plus.org/downloads/) a developer's swiss army knife.
-###### Git ######
-[GitExtensions](https://github.com/gitextensions/gitextensions/releases/) is a powerful Git gui which you'll need to access our Git Repositories from a Windows machine
-After installation, GitExtensions will alert you of any missing configurations and you'll need to configure any missing fields. One of the first steps would be to download [Git](https://git-scm.com/downloads).
-
-We recommend to configure Git to use NotePad++ and to enable the "Git from the command line and also from 3rd-party software" option. Please make sure to set the line endings to **Commit Unix-style line endings**, as you'll be working with teammates whose environment is not compatible with Windows CRLF newlines.
-Git can install the MinTTY terminal window which is far more flexible than the Windows default console - please do. 
-In the last step of the wizard, we recommend using the Git Credential Manager.
-
-We recommend using KDiff3 and NotePad++ as seen in this screenshot:
-![GitExtensions setup](./screenshots/win_gitextensions_setup_global_config.png)  
-
-Please make sure to set the line endings to **Commit Unix-style line endings**, as you'll be working with teammates whose environment is not compatible with Windows CRLF newlines.
-
-Git needs access to user tools, you'll need to configure them in GitExtensions:  
-![GitExtensions setup](./screenshots/win_gitextensions_setup_unix_tools.png) 
-
-
-### PHP ###
-##### Visual Studio Code ##### 
-[VScode](https://code.visualstudio.com/download) is a very nice cross platform IDE with support for all sorts of languages, including PHP and typescript / javscript that we use.
-##### PhpStorm ##### 
-[PhpStorm](https://www.jetbrains.com/phpstorm/download/#section=windows) is a great IDE for php and related code.
-##### Php ##### 
-Please follow [Jeff Geerling's  excellent guide on installing and configuring PHP on windows](https://www.jeffgeerling.com/blog/2018/installing-php-7-and-composer-on-windows-10) that I wouldn't dare improve.
-Make sure you add your php folder to your path environment variable (Press Start > type 'edit environment variables' > click the **Path** line, click edit > New > Browse > navigate to the folder that contains *php.exe* and hit OK until the open dialogs go away.
-##### Composer ##### 
-Download and install [Composer for windows](https://getcomposer.org/download/) which performs some project wide tasks.
-##### XDebug ##### 
-Carefully follow the steps on the [XDebug installation page](https://xdebug.org/docs/install) in the `Installing on Windows` section.
-
-
-### Javascript ###
-##### NodeJS ##### 
-[NodeJS](https://nodejs.org/en/) provides a framework for JavaScript applications 
-##### Chocolatey ##### 
-[Chocolatey](https://chocolatey.org/docs/installation) is a javascript package manager
-##### NVM-Windows ##### 
-[nvm-windows](https://github.com/coreybutler/nvm-windows/releases) is not quite the NVM Node Version Manager for windows, but it's doing an excellent impersonation.
-
-### Platform ###
-###### Docker ######
-[Docker](https://docs.docker.com/docker-for-windows/install/) download and install. Read carefully, follow the steps, you may need to tweak or install some additional items.
+### Platform
 [MySql Workbench](https://dev.mysql.com/downloads/workbench/) is an easy way to access the wordpress databases. Registration is not required, just click `Download` > `No thanks, just start my download` and install.
 [Git Bash] This should be installed by now, but you'll need this app all the time to run `composer` or `grunt` commands. You could save yourself some time by creating a shortcut to the app. 
 ![Git Bash shortcut](./screenshots/win_git_bash_startmenu.png)
 
-###### and finally... ######
-open a terminal or powershell window, run 
-- `choco install gsudo`. This will download and install a sudo command line option that enables shell scripts to ask for elevation on windows.
-- `choco install yarn`. Yarn ties our javascript code together.
-- `npm install -g grunt-cli`. Grunt provides a platform to run various build tasks.
-- `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`. This allows scrips such as grunt to run.
-
-- composer install > fix the phps
-- yarn > fix the csss package.json
-- grunt > do the fixes
-
-## Set up PHPStorm
+## Set up PHPUnit
 
 ### Enabling a bash terminal in PHPStorm
 In Preferences > Tools > Terminal, enter the path to Git Bash; using a linux shell helps with existing composer scripts.

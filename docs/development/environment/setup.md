@@ -6,7 +6,7 @@ custom_edit_url: https://github.com/Yoast/developer-docs/edit/master/docs/develo
 ---
 import Alert from '../../../../developer-site/src/components/Alert';
 
-This page describes the process of how we set up development environments at Yoast.
+This page describes the process of how we set up development environments at Yoast on a mac / linux machine.
 
 **Note: These instructions assume you're working with OSX.**
 
