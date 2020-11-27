@@ -45,8 +45,8 @@ In order to ensure that unit tests can properly run, you need to add the followi
 Example:
 
 ```
-WP_DEVELOP_DIR=/Users/<your name>/Documents/Development/wordpress-develop/
-WP_PLUGIN_DIR=/Users/<your name>/Documents/Development/plugin-development-docker/plugins
+WP_DEVELOP_DIR=C:\Users\<your name>\Documents\Development\wordpress-develop\
+WP_PLUGIN_DIR=C:\Users\<your name>\Documents\Development\plugin-development-docker\plugins
 ```
 
 <Alert type="warning">
