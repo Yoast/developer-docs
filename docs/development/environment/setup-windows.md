@@ -3,8 +3,8 @@ id: setup-windows
 title: Development - Setup Windows
 sidebar_label: Development setup on Windows
 custom_edit_url: https://github.com/Yoast/developer-docs/edit/master/docs/development/environment/setup-windows.md
----
 import Alert from '../../../../developer-site/src/components/Alert';
+---
 
 This page describes the process of how we set up development environments at Yoast on a Windows machine.
 
