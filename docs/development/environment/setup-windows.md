@@ -26,7 +26,7 @@ In your terminal, `cd` to the newly created `Yoast` directory. In there, you sho
 ### Platform
 [MySql Workbench](https://dev.mysql.com/downloads/workbench/) is an easy way to access the WordPress databases. Registration is not required, just click `Download` > `No thanks, just start my download` and install.
 [Git Bash] This should be installed by now, but you'll need this app all the time to run `composer` or `grunt` commands. You could save yourself some time by creating a shortcut to the app. 
-<img src={useBaseUrl( 'img/win_git_bash_startmenu.png' )} alt='Git Bash shortcut' />
+![img src={useBaseUrl( 'img/win_git_bash_startmenu.png' )} alt='Git Bash shortcut']
 
 ## Set up PHPUnit
 
