@@ -26,13 +26,13 @@ In your terminal, `cd` to the newly created `Yoast` directory. In there, you sho
 ### Platform
 [MySql Workbench](https://dev.mysql.com/downloads/workbench/) is an easy way to access the WordPress databases. Registration is not required, just click `Download` > `No thanks, just start my download` and install.
 [Git Bash] This should be installed by now, but you'll need this app all the time to run `composer` or `grunt` commands. You could save yourself some time by creating a shortcut to the app. 
-![img src={useBaseUrl( 'img/win_git_bash_startmenu.png' )} alt='Git Bash shortcut']
+![Git Bash shortcut](../../static/img/screenshots/win_git_bash_startmenu.png)
 
 ## Set up PHPUnit
 
 ### Enabling a bash terminal in PHPStorm
 In Preferences > Tools > Terminal, enter the path to Git Bash; using a linux shell helps with existing composer scripts.
-<img src={useBaseUrl( 'img/win_phpstorm_terminal_gitbash.png' )} alt='Set Git Bash terminal in PHPStorm' />
+![Set Git Bash terminal in PHPStorm](../../static/img/win_phpstorm_terminal_gitbash.png)
 
 ### Enabling PHPUnit in PhpStorm
 The setup in PhpStorm can be completed by following the next steps:
