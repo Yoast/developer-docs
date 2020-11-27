@@ -26,12 +26,12 @@ Git can install the MinTTY terminal window which is far more flexible than the W
 In the last step of the wizard, we recommend using the Git Credential Manager.
 
 We recommend using KDiff3 and NotePad++ as seen in this screenshot:
-![GitExtensions setup](./screenshots/win_gitextensions_setup_global_config.png)  
+<img src={useBaseUrl( 'img/win_gitextensions_setup_global_config.png' )} alt='Setup external tools in GitExtensions' /> 
 
 Please make sure to set the line endings to **Commit Unix-style line endings**, as you'll be working with teammates whose environment is not compatible with Windows CRLF newlines.
 
 Git needs access to user tools, you'll need to configure them in GitExtensions:  
-![GitExtensions setup](./screenshots/win_gitextensions_setup_unix_tools.png) 
+<img src={useBaseUrl( 'img/win_gitextensions_setup_unix_tools.png' )} alt='Setup unix tools in GitExtensions' /> 
 
 Documentation on how to configure your local Git setup and how to add your SSH key to GitHub can be found [here](https://help.github.com/articles/set-up-git) and [here](https://help.github.com/articles/generating-ssh-keys).
 
@@ -40,13 +40,13 @@ Documentation on how to configure your local Git setup and how to add your SSH k
 ### Docker
 At Yoast, we make use of [Docker](https://docs.docker.com/docker-for-windows/install/) as the foundation for our development setup. To get developers up and running faster, we created [our own development setup](https://github.com/Yoast/plugin-development-docker), based on Docker, that you can freely use.
 
-### MySql Workbench
-To manage and search your database in an easy and quick way, use [Mysql Workbench](https://dev.mysql.com/downloads/workbench/).
+### MySQL Workbench
+To manage and search your database in an easy and quick way, use [MySQL Workbench](https://dev.MySQL.com/downloads/workbench/).
 
 To find out how to connect to the Docker database, [check out the instructions](https://github.com/Yoast/plugin-development-docker#connecting-to-the-database) on the Plugin Development Docker repository.
 
 ### xgettext
-xgettext is a GNU internationalization (i18n) and localization (l10n) library. At the time of writing this is needed to build the wordpress-seo plugin.
+xgettext is a GNU internationalization (i18n) and localization (l10n) library. At the time of writing this is needed to build the WordPress-seo plugin.
 ```shell script
 choco install xgettext
 ```
@@ -69,7 +69,7 @@ Download and install [Composer for windows](https://getcomposer.org/download/) w
 
 #### XDebug 
 Carefully follow the steps on the [XDebug installation page](https://xdebug.org/docs/install) in the `Installing on Windows` section.
-Be sure to follow the steps at [wordpress-debugging](https://github.com/Yoast/plugin-development-docker/#wordpress-debugging) to configure your local environment.
+Be sure to follow the steps at [WordPress-debugging](https://github.com/Yoast/plugin-development-docker/#WordPress-debugging) to configure your local environment.
 
 ### JavaScript
 

@@ -24,15 +24,15 @@ Generally speaking, we advise people to create a `Yoast` folder in their `Docume
 In your terminal, `cd` to the newly created `Yoast` directory. In there, you should locate the Docker directory and navigate to `<your docker directory>/plugins` where you can clone the various plugin repositories.
 
 ### Platform
-[MySql Workbench](https://dev.mysql.com/downloads/workbench/) is an easy way to access the wordpress databases. Registration is not required, just click `Download` > `No thanks, just start my download` and install.
+[MySql Workbench](https://dev.mysql.com/downloads/workbench/) is an easy way to access the WordPress databases. Registration is not required, just click `Download` > `No thanks, just start my download` and install.
 [Git Bash] This should be installed by now, but you'll need this app all the time to run `composer` or `grunt` commands. You could save yourself some time by creating a shortcut to the app. 
-![Git Bash shortcut](./screenshots/win_git_bash_startmenu.png)
+<img src={useBaseUrl( 'img/win_git_bash_startmenu.png' )} alt='Git Bash shortcut' />
 
 ## Set up PHPUnit
 
 ### Enabling a bash terminal in PHPStorm
 In Preferences > Tools > Terminal, enter the path to Git Bash; using a linux shell helps with existing composer scripts.
-![Set Git Bash terminal in PHPStorm](./screenshots/win_phpstorm_terminal_gitbash.png)
+<img src={useBaseUrl( 'img/win_phpstorm_terminal_gitbash.png' )} alt='Set Git Bash terminal in PHPStorm' />
 
 ### Enabling PHPUnit in PhpStorm
 The setup in PhpStorm can be completed by following the next steps:
@@ -40,7 +40,7 @@ The setup in PhpStorm can be completed by following the next steps:
 *   Under the Run menu in PhpStorm, go to `Edit configurations`.
 *   In the following window, press the `+` in the left corner and choose PHPUnit in the options.
 *   Select the option: `Defined in the configuration page` and check the checkbox for `Use alternative configuration file`.
-*   Behind the checkbox, enter the full path to the `phpunit.xml.dist` file. This file is located in the plugin directory. If the repository contains a `phpunit.xml` file, use that one instead. (i.e wordpress-seo has two types of tests. Use `phpunit-integration.xml.dist` for the 'old' integration tests, and `phpunit.xml.dist` for the BrainMonkey tests.)
+*   Behind the checkbox, enter the full path to the `phpunit.xml.dist` file. This file is located in the plugin directory. If the repository contains a `phpunit.xml` file, use that one instead. (i.e WordPress-seo has two types of tests. Use `phpunit-integration.xml.dist` for the 'old' integration tests, and `phpunit.xml.dist` for the BrainMonkey tests.)
 *   Now you've entered the path, press the icon on the far right. This will bring you to the `Test frameworks` window.
 *   Press the plus icon and select the first option: `PHPUnit Local`. Select `Path to phpunit.phar` and enter the path to the file. It's probably in your `/Cellar` directory. If you do not have a `phpunit.phar` file yet, you can download it here: [https://phar.phpunit.de/](https://phar.phpunit.de/)
 *   Finally, when you return to the `Run/Debug configurations` window, there might be an error message at the bottom. Press the `Fix` button next to it and select PHP as your CLI interpreter. Apply and done!
@@ -48,13 +48,13 @@ The setup in PhpStorm can be completed by following the next steps:
 ### Configuring PHPUnit to work with WordPress and the plugins
 In order to ensure that unit tests can properly run, you need to add the following two constants:
 
-* `WP_DEVELOP_DIR` - Refers to the cloned repository of `wordpress-develop`, as it's located on your system.
+* `WP_DEVELOP_DIR` - Refers to the cloned repository of `WordPress-develop`, as it's located on your system.
 * `WP_PLUGIN_DIR` - Refers to the directory where the WordPress plugins are located.
 
 Example:
 
 ```
-WP_DEVELOP_DIR=C:\Users\<your name>\Documents\Yoast\wordpress-develop\
+WP_DEVELOP_DIR=C:\Users\<your name>\Documents\Yoast\WordPress-develop\
 WP_PLUGIN_DIR=C:\Users\<your name>\Documents\Yoast\plugin-development-docker\plugins
 ```
 
@@ -78,7 +78,7 @@ To have the complete set of Yoast plugins, clone the following repositories in y
 
 Yoast SEO with the addons:
 
-*   [https://github.com/Yoast/wordpress-seo](https://github.com/Yoast/wordpress-seo)
+*   [https://github.com/Yoast/WordPress-seo](https://github.com/Yoast/WordPress-seo)
 *   [https://github.com/Yoast/wpseo-news](https://github.com/Yoast/wpseo-news)
 *   [https://github.com/Yoast/wpseo-woocommerce](https://github.com/Yoast/wpseo-woocommerce)
 
@@ -86,9 +86,9 @@ For each of these add-ons, run `composer install` and `yarn` in the respective d
 
 Additional plugins:
 
-*   [https://wordpress.org/plugins/yoast-test-helper/](https://wordpress.org/plugins/yoast-test-helper/) - Makes testing Yoast SEO, Yoast SEO add-ons and integrations and resetting the different features a lot easier.
+*   [https://WordPress.org/plugins/yoast-test-helper/](https://WordPress.org/plugins/yoast-test-helper/) - Makes testing Yoast SEO, Yoast SEO add-ons and integrations and resetting the different features a lot easier.
 *   [https://github.com/Yoast/yoast-acf-analysis](https://github.com/Yoast/yoast-acf-analysis) - Provide compatiblity with [Advanced Custom Fields](https://www.advancedcustomfields.com/)
-*   [https://github.com/Yoast/yoastseo-amp](https://github.com/Yoast/yoastseo-amp) - Provide additional functionality for The [AMP plugin](https://nl.wordpress.org/plugins/amp/)
+*   [https://github.com/Yoast/yoastseo-amp](https://github.com/Yoast/yoastseo-amp) - Provide additional functionality for The [AMP plugin](https://nl.WordPress.org/plugins/amp/)
 
 All our publicly accessible repositories can be [found on GitHub](https://github.com/Yoast/)
 
@@ -99,7 +99,7 @@ Due to the way we have structured most of our JavaScript / React code in the for
 If you're developing within the JavaScript code that is part of one of the plugins, you need to ensure that the code is also available in your WordPress environment. This can be achieved by using the following steps:
 
 * Ensure you've cloned the JavaScript monorepo to somewhere on your machine.
-* Navigate to your WordPress development environment and are in the correct plugin's directory (i.e. `/plugins/wordpress-seo` or `/plugins/wordpress-seo-premium`).
+* Navigate to your WordPress development environment and are in the correct plugin's directory (i.e. `/plugins/WordPress-seo` or `/plugins/WordPress-seo-premium`).
 * Checkout your desired branch in the plugin's directory (or create a new one).
 * Run `yarn`, followed by `yarn link-monorepo`.
 * While running the second command, you might be asked to give up the directory that you've cloned the monorepo to. 
@@ -118,4 +118,4 @@ If you're planning on only working on the JavaScript code, outside of a WordPres
 A list if [useful commands](https://github.com/Yoast/JavaScript#useful-commands) are also available.
 
 ## Now what?
-After you've cloned the repositories, you can navigate to `basic.wordpress.test` in your browser to see the development environment. Open the plugin directory in your IDE and you should be ready to develop!
+After you've cloned the repositories, you can navigate to `basic.WordPress.test` in your browser to see the development environment. Open the plugin directory in your IDE and you should be ready to develop!
