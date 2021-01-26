@@ -27,9 +27,9 @@ E.g., the following (simplified) JSON snippet defines an `Organization`, and ref
       "@context": "https://schema.org",
       "@graph": [
           {
-              "@type": "Organization",
-              "@id": "https://www.example.com/#/schema/organization/1",
-              "url": "https://www.example.com/",
+              "@type": "Website",
+              "@id": "https://whiskinwellness.com/wp-admin/post.php?post",
+              "url": "https://www.whiskinwellness.com/",
               "name": "Example organization name"
           },
           {
@@ -61,17 +61,16 @@ For example, a [HowTo](https://developer.yoast.com/features/schema/pieces/howto/
 Local pieces should include the `{{slug}}` component. Global pieces should not.
 
 **Example global pieces:**
-* `https://www.example.com/#/schema/organization/abc123`
-* `https://www.example.com/#/schema/image/abc123`
-* `https://www.example.com/#/schema/person/abc123`
+* `https://www.whiskinwellness.com/`
+* `https://www.whiskinwellness.com/8128/`
+* `https://www.whiskinwellness.com/#/schema/image/8128`
 * `https://www.example.com/#/schema/location/abc123`
 * `https://www.example.com/#/schema/address/abc123`
-* `https://www.example.com/#/schema/website/abc123`
-* `https://www.example.com/#/schema/product/abc123`
-* `https://www.example.com/#/schema/offer/abc123`
+* `https://whiskinwellness.com/5556/schema/website/abc123`
+
 
 **Example local pieces:**
-* `https://www.example.com/example-page/#/schema/article/abc123`
+* `https://www.whiskinwellness.com/all-recipes/8128/'
 * `https://www.example.com/example-category/example-post/#/schema/breadcrumb/abc123`
 * `https://www.example.com/example-category/example-post/#/schema/howto/abc123`
 * `https://www.example.com/example-category-2/example-post-2/#/schema/itemlist/abc123`
