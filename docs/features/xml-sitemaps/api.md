@@ -149,7 +149,7 @@ add_filter( 'wpseo_sitemap_index', 'add_sitemap_custom_items' );
  */
 function sitemap_post_url( $url, $post ) {
 	if ( $post->post_type === 'guest_authors' ) {
-		return \str_replace( 'guest-authors', 'guests', $url );
+		return str_replace( 'guest-authors', 'guests', $url );
 	}
 
 	return $url;
