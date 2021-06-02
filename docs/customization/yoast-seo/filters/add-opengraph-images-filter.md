@@ -28,7 +28,7 @@ function add_opengraph_image_to_page( $container ) {
 		}
 	}
 }
-add_action( 'wpseo_add_opengraph_images', 'add_opengraph_image_to_page', 29 );
+add_filter( 'wpseo_add_opengraph_images', 'add_opengraph_image_to_page', 29 );
 ```
 
 ### Filter the OpenGraph image for WordPress archives pages
@@ -45,5 +45,5 @@ function add_opengraph_image_to_archives_pages( $container ) {
 		}
 	}
 }
-add_action( 'wpseo_add_opengraph_images', 'add_opengraph_image_to_archives_pages', 29 );
+add_filter( 'wpseo_add_opengraph_images', 'add_opengraph_image_to_archives_pages', 29 );
 ```
