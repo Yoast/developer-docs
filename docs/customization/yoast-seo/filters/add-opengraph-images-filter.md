@@ -35,7 +35,7 @@ add_filter( 'wpseo_add_opengraph_images', 'add_opengraph_image_to_page', 29 );
 ```php
 <?php
 /**
- * Filter the OpenGraph image for a WordPress page
+ * Filter the OpenGraph image for WordPress archives pages
  */
 function add_opengraph_image_to_archives_pages( $image_container ) {
 	if ( is_archive() ) {
