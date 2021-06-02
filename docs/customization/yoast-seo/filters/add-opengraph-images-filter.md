@@ -10,8 +10,6 @@ The filter receive an instance of an image container. The method [`add_image_by_
 
 In practise, the filter adds the image to the `og:image` if no image is set as featured image for the post. If an image is already set, the filter will replace it with the image which is passed to its callback function.
 
-
-
 ## Usage
 
 ### Filter the OpenGraph image for a WordPress page
