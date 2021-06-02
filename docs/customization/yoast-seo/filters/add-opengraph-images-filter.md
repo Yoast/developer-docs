@@ -20,11 +20,11 @@ In practise, the filter adds the image to the `og:image` if no image is set as f
 /**
  * Filter the OpenGraph image for a WordPress page
  */
-function add_opengraph_image_to_page( $container ) {
+function add_opengraph_image_to_page( $image_container ) {
 	if ( is_page( $page_id ) ) {
 		$image_id = $some_id;
 		if ( $image_id ) {
-            $container->add_image_by_id( $image_id );
+            $image_container->add_image_by_id( $image_id );
 		}
 	}
 }
@@ -37,11 +37,11 @@ add_filter( 'wpseo_add_opengraph_images', 'add_opengraph_image_to_page', 29 );
 /**
  * Filter the OpenGraph image for a WordPress page
  */
-function add_opengraph_image_to_archives_pages( $container ) {
+function add_opengraph_image_to_archives_pages( $image_container ) {
 	if ( is_archive() ) {
 		$image_id = $some_id;
 		if ( $image_id ) {
-            $container->add_image_by_id( $image_id );
+            $image_container->add_image_by_id( $image_id );
 		}
 	}
 }
