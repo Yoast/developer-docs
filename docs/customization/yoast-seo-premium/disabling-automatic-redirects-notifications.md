@@ -11,12 +11,12 @@ Yoast SEO Premium monitors for URL changes and automatically creates a redirect.
 
 ### Posts and pages
 ```php
-add_filter( 'wpseo_premium_post_redirect_slug_change', '__return_true' );
+add_filter( 'Yoast\WP\SEO\post_redirect_slug_change', '__return_true' );
 ```
 
 ### Taxonomies (categories, tags etc)
 ```php
-add_filter( 'wpseo_premium_term_redirect_slug_change', '__return_true' );
+add_filter( 'Yoast\WP\SEO\term_redirect_slug_change', '__return_true' );
 ```
 
 Note: If you see the redirect created notification and you have not changed the URL or slug, this is most commonly caused by a conflict. Please check for conflicts by following the steps in [this article](https://yoast.com/kb/how-to-check-for-plugin-conflicts).
